@@ -12,21 +12,25 @@ console.log('***** Cart Functions *****');
 var basket = [];
 
 function addItem(item){
-    basket.push('item')
+    basket.push(item)
     return true;
 }
-addItem();
+addItem('carrots');
+addItem('flowere');
+addItem('napkins');
+console.log(basket);
 
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
 
 function listItems(items){
-    for(items of basket){
-        console.log('each individual item', items);
+    for(item of items){
+        console.log('each individual item:', items);
 } 
 }
-listItems();
+listItems(basket);
+
 //  - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
 
@@ -36,4 +40,6 @@ function empty (){
         basket.pop(); 
     }
     }
-    console.log ('show empty array', empty(basket.length=0));
+    empty(basket.length=0)
+    console.log(basket);
+    
